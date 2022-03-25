@@ -1,12 +1,16 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
 import {View, Text,Button} from 'react-native';
 import React from 'react';
 import styles from './Style';
-export default function About({navigation, route}) {
+import HeaderComp from '../../Components/HeaderComp';
+HeaderComp
+export default function About({navigation}) {
   return (
     <View>
-      <Text>{route.params.title}</Text>
-      <Button title='top' onPress={()=>navigation.popToTop()} />
+      <Text>about component</Text>
+    <HeaderComp text="About" goBack={()=>navigation.goBack()} />
+      <Button title="Search" onPress={()=>navigation.navigate('Search')} />
     </View>
   );
 }

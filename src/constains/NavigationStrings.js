@@ -1,5 +1,7 @@
-export default{
-    HOME:'Home',
-    ABOUT:'About',
-    CONTACT:'Contact'
-}
+/* eslint-disable prettier/prettier */
+export default {
+  HOME: 'Home',
+  ABOUT: 'About',
+  // eslint-disable-next-line prettier/prettier
+  CONTACT: 'Contact',
+};
